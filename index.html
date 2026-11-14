@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#170d18">
+  <meta name="description" content="یه سورپرایز کوچیک برای نیلو">
+  <title>برای نیلو ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero screen" id="home">
+      <div class="topline"><span class="tiny-heart">♡</span> یک گوشه‌ی کوچیک از دنیای من <span class="tiny-heart">♡</span></div>
+      <div class="envelope-wrap" id="envelopeWrap">
+        <button class="envelope" id="openEnvelope" aria-label="باز کردن نامه">
+          <span class="envelope-glow"></span>
+          <span class="letter"><span>برای نیلو</span><small>با کلی حرف نگفته...</small></span>
+          <span class="flap"></span><span class="envelope-front"></span>
+          <span class="seal">♡</span>
+        </button>
+      </div>
+      <p class="eyebrow">یه سورپرایز کوچولو</p>
+      <h1>نیلو، <span>این چند دقیقه</span><br>فقط برای توئه.</h1>
+      <p class="intro">یه چیزی ساختم که شاید نتونه همه‌ی حرفامو بگه،<br class="desktop"> ولی می‌تونه شروع خوبی باشه...</p>
+      <button class="primary-btn" id="startBtn">بیا بازش کنیم <span>←</span></button>
+      <div class="scroll-hint">آروم بیا پایین <span>⌄</span></div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="section-kicker">01 — چند خط از دلم</div>
+      <div class="story-card glass">
+        <div class="quote-mark">“</div>
+        <h2>بعضی آدما...</h2>
+        <p>بعضی آدما حتی وقتی از روزمرگی‌هامون دور می‌شن، یه گوشه‌ی ذهنمون می‌مونن. نه برای اینکه زمان متوقف شده؛ برای اینکه بعضی حس‌ها، با گذشت زمان فقط شکلشون عوض می‌شه.</p>
+        <p>این صفحه قرار نیست گذشته رو دوباره تعریف کنه یا چیزی رو بهت ثابت کنه. فقط خواستم بدونی برگشتنت برام اتفاق کوچیکی نبود.</p>
+        <div class="signature">— از طرف کسی که این صفحه رو با لبخند ساخت</div>
+        <button class="primary-btn next-btn" data-next="distance">ادامه‌ی سورپرایز <span>←</span></button>
+      </div>
+    </section>
+
+    <section class="distance section" id="distance">
+      <div class="section-kicker">02 — بین دیروز و امروز</div>
+      <h2 class="center-title">گاهی فاصله هم<br><span>حرف‌هایی برای گفتن داره.</span></h2>
+      <div class="orbit-card glass">
+        <div class="orbit"><span class="orbit-heart">♡</span><i></i><i></i><i></i></div>
+        <p>این چند ماه، هر کدوممون مسیر خودمون رو داشتیم.</p>
+        <p class="muted">و حالا، به‌جای شمردن روزهای گذشته،<br>می‌شه به لحظه‌ای فکر کرد که همین الان پیش رومونه.</p>
+        <button class="primary-btn next-btn" data-next="note">یه قدم دیگه <span>←</span></button>
+      </div>
+    </section>
+
+    <section class="note section" id="note">
+      <div class="section-kicker">03 — یه اعتراف کوچیک</div>
+      <div class="note-inner">
+        <div class="sparkle">✧</div>
+        <h2>خوشحالم که<br><em>دوباره اینجایی، نیلو.</em></h2>
+        <p>نه اینکه همه‌چیز باید از اول مثل قبل باشه؛ شاید حتی قشنگ‌تر باشه اگه این بار، با شناخت بیشتر و حرف‌های روشن‌تر جلو بریم.</p>
+        <p>من از این لحظه خوشحالم. همین. ♡</p>
+        <button class="primary-btn next-btn" data-next="final">بریم سراغ یه سؤال مهم <span>←</span></button>
+      </div>
+    </section>
+
+    <section class="final section" id="final">
+      <div class="section-kicker">04 — حالا یه سؤال</div>
+      <div class="final-card glass">
+        <div class="big-heart">♡</div>
+        <h2>نیلو جوجم:)</h2>
+        <p class="question">حاضری ببینیم<br><span>این فصل جدید</span> قراره چقدر قشنگ بشه؟</p>
+        <p class="soft">بدون عجله، بدون قول‌های بزرگ؛ فقط با صداقت و حال خوب.</p>
+        <div class="choices">
+          <button class="primary-btn choice-yes" id="yesBtn">آره، ببینیم چی می‌شه ♡</button>
+          <button class="quiet-btn" id="laterBtn">بذار یکم فکر کنم</button>
+        </div>
+        <div id="response" class="response" aria-live="polite"></div>
+      </div>
+    </section>
+    <footer>ساخته‌شده با کلی ذوق، فقط برای نیلو <span>♡</span></footer>
+  </main>
+
+  <audio id="bgMusic" autoplay loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
